@@ -15,6 +15,13 @@ Route::get('/welcom', function () {
     return view('welcome');
 });
 
-Route::get('/index', 'IndexController@index');
 
-Route::get('test', 'TestController@index');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('products.index');
+Route::get('/contact', [ContactController::class, 'show'])->name('contact');
+
+
+
+
+
+
