@@ -21,7 +21,7 @@ services:
     container_name: db
     environment: 
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: gnsndb
+      MYSQL_DATABASE: ecdb
       MYSQL_USER: root
       MYSQL_PASSWORD: root
       TZ: 'Asia/Tokyo' 
